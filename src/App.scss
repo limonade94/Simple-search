@@ -1,0 +1,48 @@
+#root {
+	max-width: 1316px;
+	margin: 0 auto;
+}
+.flex-container {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 2em;
+	grid-row-gap: 3em;
+
+	padding: 1em;
+
+	> li {
+		text-align: center;
+		transform: translateZ(0);
+		transition: transform 0.25s ease-out;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		img {
+			display: inline-block;
+			align-self: stretch;
+			width: 100%;
+			margin-bottom: 5px;
+			border-radius: 5px;
+		}
+	}
+}
+
+h2 {
+	font-size: 1.2em;
+	margin-bottom: 16px;
+}
+
+.search-field {
+	display: block;
+	padding: 10px;
+	min-width: 300px;
+	margin: 50px auto;
+	border-radius: 5px;
+	border: 2px solid #555557;
+
+	&:focus {
+		outline: none;
+	}
+}
